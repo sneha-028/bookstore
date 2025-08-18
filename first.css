@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: Georgia, serif;
+  background-color:#8B5E3C;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("https://i.pinimg.com/1200x/65/79/4d/65794da1ce3e5e3537a281ad6eaba286.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color:#8B5E3C;
+}
+header h1 {
+  font-size: 28px;
+  color:#f5f5dc;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color:white;
+  font-size: 16px;
+}
+.btn-group a {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 1px solid #8B5E3C;
+  transition: all 0.3s ease;
+}
+.login-btn {
+  background: transparent;
+  color: #8B5E3C;
+}
+.login-btn:hover {
+  background: #432818;
+  color: #FFF7CC;
+}
+.signup-btn {
+  background: transparent;
+  color: #8B5E3C;
+}
+.signup-btn:hover {
+  background:#432818;
+  color: #FFF7CC;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.quote {
+  position: absolute;
+  top: 40%;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;  
+  font-style: italic;
+  color:#d4a373;
+  text-align: center;
+  animation: fadeInUp 3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

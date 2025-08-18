@@ -1,0 +1,82 @@
+body {
+  background-color:#bc6c25;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.books-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.books-section h2 {
+  font-size: 42px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color:black;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.book-card {
+  background:#dda15e;
+  border-radius: 16px;
+  box-shadow: 0px 2px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  padding: 20px;
+  width: 230px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.book-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.book-author {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #f97316;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+}
+.book-card img {
+  width: 100%;
+  height: 250px;      
+  object-fit: contain; 
+border-radius: 10px;
+  background-color:black; 
+  padding: 5px;          
+}
