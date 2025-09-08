@@ -1,0 +1,63 @@
+body {
+    background: url('https://media.istockphoto.com/id/1498925745/photo/man-holding-a-knife-under-neon-lights.jpg?s=612x612&w=0&k=20&c=Z7sd-X15RKc4X-RLtS182e_wP6airqy5h-ZajOW6568=') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 8px black;
+}
+
+p.subtitle {
+    font-size: 10rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 6px black;
+}
+
+.book-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.book-card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 180px;
+    box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px 5px rgba(255, 0, 0, 1);
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 2px rgba(255, 0, 0, 0.8);
+}
+
+.book-title {
+    margin-top: 0.8rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 4px black;
+}
+
+.book-author {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    color: #ff6666;
+    text-shadow: 1px 1px 3px black;
+}
