@@ -1,4 +1,4 @@
-body {
+/* body {
     background: url('https://media.istockphoto.com/id/1498925745/photo/man-holding-a-knife-under-neon-lights.jpg?s=612x612&w=0&k=20&c=Z7sd-X15RKc4X-RLtS182e_wP6airqy5h-ZajOW6568=') no-repeat center center fixed;
     background-size: cover;
     color: white;
@@ -60,4 +60,138 @@ p.subtitle {
     margin-top: 0.3rem;
     color: #ff6666;
     text-shadow: 1px 1px 3px black;
+}
+
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+} */
+
+
+body {
+    background: url('https://media.istockphoto.com/id/1498925745/photo/man-holding-a-knife-under-neon-lights.jpg?s=612x612&w=0&k=20&c=Z7sd-X15RKc4X-RLtS182e_wP6airqy5h-ZajOW6568=') 
+                no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 Heading Section */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.9);
+    letter-spacing: 2px;
+}
+
+p.tagline {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+    color: #ffcccc;
+}
+
+/* 🔹 Search Bar */
+.search-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#searchBar {
+    width: 320px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ff3333;
+    outline: none;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+#searchBar::placeholder {
+    color: #ddd;
+}
+
+#searchBar:focus {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+    border-color: #ff5555;
+}
+
+/* 🔹 Book Cards Container */
+.book-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* 🔹 Each Book Card */
+.book-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 0 20px 3px rgba(255, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.book-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 30px 6px rgba(255, 0, 0, 1);
+}
+
+/* 🔹 Book Image */
+.book-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 270px;
+    object-fit: cover;
+    box-shadow: 0 0 12px 2px rgba(255, 0, 0, 0.7);
+}
+
+/* 🔹 Book Text Details */
+.book-title {
+    margin-top: 0.8rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 4px black;
+    color: #fff;
+}
+
+.book-author {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    color: #ff6666;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+    #searchBar {
+        width: 90%;
+    }
+
+    .book-card {
+        width: 160px;
+    }
 }

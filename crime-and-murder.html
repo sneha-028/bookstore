@@ -1,35 +1,135 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Crime and Murder Books</title>
-    <link rel="stylesheet" href="crime-and-murder.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crime and Murder Books</title>
+  <link rel="stylesheet" href="crime-and-murder.css" />
 </head>
 <body>
-    <h1>Crime and Murder Mystery</h1>
-    <p class="tagline">Unravel the dark secrets… if you dare.</p>
-    <div class="book-cards">
-        <div class="book-card">
-            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1676648951l/75257471.jpg" alt="Murder at Midnight" />
-            <div class="book-title">Murder at Midnight</div>
-        
-        </div>
-        <div class="book-card">
-<img src="https://m.media-amazon.com/images/I/71ExrIiRwBL._UF1000,1000_QL80_.jpg" alt="The Silent Witness" />
-            <div class="book-title">The Silent Witness</div>
-            
-        </div>
-        <div class="book-card">
-            <img src="https://m.media-amazon.com/images/M/MV5BN2Q4NjE0MWItNzY4Zi00NjNlLWIwZWUtZDMzNWUzNGZiNjIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Shadows of the Past" />
-            <div class="book-title">Shadows of the Past</div>
-            
-        </div>
-        <div class="book-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLpn6v4eL2x8bRrLZrGKTaNfmY4lLTyGjCg&s" alt="Crime Lab Chronicles" />
-            <div class="book-title">Crime Lab Chronicles</div>
-        
-        </div>
+  <h1>Crime and Murder Mystery</h1>
+  <p class="tagline">Unravel the dark secrets… if you dare.</p>
+
+  <!-- 🔍 Search Bar -->
+  <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search for books..." />
+  </div>
+
+  <!-- 📚 Book Cards -->
+  <div class="book-cards">
+    <div class="book-card">
+      <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1676648951l/75257471.jpg" alt="Murder at Midnight" />
+      <div class="book-title">Murder at Midnight</div>
+      <div class="book-author">Avi</div>
+  <div class="rating">★★★★☆</div>
+  <div class="price">rs.500</div>
     </div>
+
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/71ExrIiRwBL._UF1000,1000_QL80_.jpg" alt="The Silent Witness" />
+      <div class="book-title">The Silent Witness</div>
+      <div class="book-author">Carolyn Arnold</div>
+  <div class="rating">★★★★☆</div>
+  <div class="price">rs.600</div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/M/MV5BN2Q4NjE0MWItNzY4Zi00NjNlLWIwZWUtZDMzNWUzNGZiNjIxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Shadows of the Past" />
+      <div class="book-title">Shadows of the Past</div>
+      <div class="book-author">Jenny Elaine</div>
+  <div class="rating">★★★★☆</div>
+  <div class="price">rs.500</div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLpn6v4eL2x8bRrLZrGKTaNfmY4lLTyGjCg&s" alt="Crime Lab Chronicles" />
+      <div class="book-title">Crime Lab Chronicles</div>
+      <div class="book-author">Carol Ericson</div>
+  <div class="rating">★★★★☆</div>
+  <div class="price">rs.600</div>
+    </div>
+  
+
+  <div class="book-card">
+      <img src="https://www.booksbykilo.in/media/books/BBK/9781849162883-New.jpg"/>
+      <div class="book-title">The Girl with the Dragon Tattoo</div>
+      <div class="book-author">Stieg Larsson</div>
+  <div class="rating">★★★★☆</div>
+  <div class="price">rs.600</div>
+    </div>
+  
+
+  <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/71c4JtOf3FL._UF350,350_QL50_.jpg"/>
+      <div class="book-title">The Chain</div>
+      <div class="book-author">Adrian McKinty</div>
+  <div class="rating">★★★★☆</div>
+  <div class="price">rs.500</div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/71xh8ikTW3L.jpg"/>
+      <div class="book-title">The Thursday Murder Club</div>
+      <div class="book-author">Richard Osman</div>
+  <div class="rating">★★★★☆</div>
+  <div class="price">rs.650</div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/81jaN0aJ+jL.jpg"/>
+      <div class="book-title">In Cold Blood</div>
+    <div class="book-author">Truman Capote</div>
+  <div class="rating">★★★★☆</div>
+  <div class="price">rs.500</div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/814L2Bl8MbL._AC_UF1000,1000_QL80_.jpg"/>
+      <div class="book-title">The Devil in the White City</div>
+      <div class="book-author">Erik Larson</div>
+  <div class="rating">★★★★☆</div>
+  <div class="price">rs.700</div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://m.media-amazon.com/images/I/710ksOeGE3L._AC_UF1000,1000_QL80_.jpg"/>
+      <div class="book-title">Night Film</div>
+      <div class="book-author">Marisha Pessl</div>
+  <div class="rating">★★★★☆</div>
+  <div class="price">rs.600</div>
+    </div>
+
+  </div>
+
+  
+  <script>
+    const searchBar = document.getElementById('searchBar');
+    const bookCards = document.querySelector('.book-cards');
+    const cards = bookCards.getElementsByClassName('book-card');
+
+    searchBar.addEventListener('keyup', function () {
+      const query = searchBar.value.toLowerCase().trim();
+
+      for (let i = 0; i < cards.length; i++) {
+        const title = cards[i].querySelector('.book-title').innerText.toLowerCase();
+
+        if (title.includes(query)) {
+          cards[i].style.display = 'block';
+        } else {
+          cards[i].style.display = 'none';
+        }
+      }
+
+      // If input is empty, show all books again
+      if (query === '') {
+        for (let i = 0; i < cards.length; i++) {
+          cards[i].style.display = 'block';
+        }
+      }
+    });
+  </script>
 </body>
 </html>
