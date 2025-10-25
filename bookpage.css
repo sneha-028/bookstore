@@ -1,5 +1,5 @@
 body {
-  background-color:#bc6c25;
+  background-color: #bc6c25;
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -7,76 +7,136 @@ body {
 }
 
 .books-section {
-  padding: 40px 20px;
+  
   text-align: center;
+  padding: 30px;
 }
 
 .books-section h2 {
   font-size: 42px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-bottom: 40px;
   font-weight: 700;
-  color:black;
+  color: black;
 }
 
 .book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 30px;
-  justify-items: center;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 .book-card {
-  background:#dda15e;
-  border-radius: 16px;
-  box-shadow: 0px 2px 12px rgba(0,0,0,0.08);
-  text-align: center;
-  padding: 20px;
-  width: 230px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  background-color: #d38d5f;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  transition: transform 0.3s;
 }
 
 .book-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: scale(1.03);
 }
 
 .book-card img {
-  width: 100%;
-  height: 300px;
+  width: 150px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 15px;
+  border-radius: 8px;
 }
 
 .book-title {
-  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-top: 10px;
+  font-size: 1.1em;
 }
 
 .book-author {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 10px;
+  color: #4b2b14;
+  margin-bottom: 5px;
 }
 
 .rating {
-  color: #f97316;
-  font-size: 1rem;
-  margin-bottom: 10px;
+  color: orange;
+  margin-bottom: 5px;
 }
 
 .price {
-  font-size: 1.1rem;
   font-weight: bold;
-  color: #000;
+  margin-bottom: 10px;
 }
-.book-card img {
-  width: 100%;
-  height: 250px;      
-  object-fit: contain; 
-border-radius: 10px;
-  background-color:black; 
-  padding: 5px;          
+
+/* Description button */
+.desc-btn {
+  background-color: orange;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.desc-btn:hover {
+   background-color: #e67300;
+}
+
+
+
+
+/* Description text */
+.desc-text {
+  display: none;  /* hide initially */
+  margin-top: 10px;
+  color: #333;
+  font-size: 0.9em;
+}
+
+
+
+.desc-box {
+  max-height: 0;          /* hide by default */
+  overflow: hidden;       /* prevent text overflow */
+  padding: 0;             /* no padding until opened */
+  border: none;           /* no border until opened */
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  color: #000;
+  background: transparent;
+}
+
+
+.book-card.active .desc-box {
+  max-height: 300px; /* Adjust based on how much text you have */
+}
+
+
+/* Add to Cart Button Styling */
+.add-cart-btn {
+    display: inline-block;
+    padding: 10px 20px;          
+    margin: 10px 0;              
+    background-color: #ff6f61;   
+    color: white;                
+    font-size: 16px;             
+    font-weight: bold;
+    border: none;                
+    border-radius: 8px;          
+    cursor: pointer;             
+    transition: 0.3s ease;       
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slight shadow */
+}
+
+.add-cart-btn:hover {
+    background-color: #ff3b2e;   /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
